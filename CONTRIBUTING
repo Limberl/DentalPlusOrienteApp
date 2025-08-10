@@ -1,0 +1,14 @@
+# Guía de Contribución
+
+## Requisitos previos
+- Java 17
+- Apache NetBeans 26 o superior
+- Apache Tomcat 11
+- Git y cuenta en GitHub
+
+## Inicio rápido
+1. Hacer *fork* del repositorio.
+2. Clonar:
+   ```bash
+   git clone https://github.com/<su_usuario>/DentalPlusOrienteApp.git
+   cd DentalPlusOrienteApp

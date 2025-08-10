@@ -83,3 +83,30 @@ c. ¿Cómo implementar la solución en producción en un ambiente local o en la 
 - **404**: validar `<url-pattern>/RegistroPacienteServlet</url-pattern>` y `form action="RegistroPacienteServlet"`.
 - **500 ClassNotFound**: servlet en *Source Packages*, luego **Clean and Build**.
 - **Puerto 8080 ocupado**: cambiar en `conf/server.xml` o cerrar el proceso en uso.
+
+###### 6. Contribución
+
+###### Flujo de trabajo
+1. Cree un *fork* del repositorio y clónelo.
+2. Cree una rama desde `develop`:
+   - `feature/<nombre-corto>` para funciones (ej. `feature/registro-paciente`)
+   - `fix/<id-issue>` para correcciones (ej. `fix/12-validacion-edad`)
+3. Haga commits con mensajes claros:
+   - `feat: agregar validación de edad`
+   - `fix: corregir NPE en servlet`
+   - `docs: actualizar README`
+4. Haga *push* de su rama y abra un **Pull Request** hacia `develop`.
+5. El PR debe pasar **Travis CI** (build verde) y referenciar el **issue**.
+6. *Code review* y *merge* por parte de mantenedores.
+
+###### Requisitos de código
+- Java 17, Tomcat 11, Jakarta Servlet 6.
+- Estilo: nombres descriptivos, comentarios en clases públicas.
+- Pruebas: agregue/actualice pruebas JUnit cuando corresponda.
+- No subir secretos/credenciales.
+
+###### Cómo ejecutar antes de abrir PR
+- Compilar y ejecutar localmente en Tomcat.
+- Correr pruebas:
+  - NetBeans: clic derecho `PacienteTest.java` → **Test File**
+  - Ant: `ant clean test`

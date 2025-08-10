@@ -1,0 +1,17 @@
+## Descripción
+¿Qué cambia y por qué?
+
+## Tipo de cambio
+- [ ] Fix
+- [ ] Feature
+- [ ] Docs
+- [ ] Test
+
+## Cómo probar
+Pasos para validar el cambio.
+
+## Checklist
+- [ ] Probado localmente
+- [ ] Pruebas unitarias
+- [ ] Travis CI en verde
+- [ ] Referencia a issue: Closes #__
